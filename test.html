@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>lol</title>
+    <script src="rainbow_fuckery.js"></script>
+    <style>
+        body{
+            -webkit-transition: background .25s linear;
+            transition: background .25s linear;
+        }
+        #center{
+            font-size:900%;
+            font-family:"Helvetica Neue, Helvetica";
+            width:90%;
+            margin-top:300px;
+            margin-left:7%;
+            position:absolute;
+        }
+        .square{
+            width: 20%;
+            height: 30%;
+            border:solid black 8px;
+            position:absolute;
+        }
+        .square:hover{
+            cursor:pointer;
+        }
+        .top{
+            margin-top:5%;
+        }
+        .bottom{
+            margin-top:62%;
+        }
+        .left{
+            margin-left:15%;
+        }
+        .right{
+            margin-left:60%;
+        }
+    </style>
+</head>
+<body id='body'>
+    <div id='trs' class='top right square'onclick="change_phrase();"></div>
+    <div id='tls' class='top left square'onclick="change_phrase();"></div>
+    <div id='bls' class='bottom left square'onclick="change_phrase();"></div>
+    <div id='brs' class='bottom right square' onclick="change_phrase();"></div>
+    <div id='center'>
+        Testicle Sasquatch.
+    </div>
+</body>
+</html>
