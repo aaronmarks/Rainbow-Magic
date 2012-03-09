@@ -1,19 +1,24 @@
 <html>
 <head>
-    <title>lol</title>
+    <title>flight of the valklulries</title>
     <script src="rainbow_fuckery.js"></script>
+    <script src="scriptaculous-js-1.9.0/lib/prototype.js"></script>
+    <script src="scriptaculous-js-1.9.0/src/scriptaculous.js"></script>
+    <script src="scriptaculous-js-1.9.0/src/effects.js"></script>
     <style>
         body{
-            -webkit-transition: background .25s linear;
+            -webkit-transition: background .5s linear;
             transition: background .25s linear;
         }
         #center{
-            font-size:900%;
-            font-family:"Helvetica Neue, Helvetica";
+            font-size:750%;
+            font-family:"Helvetica Neue", Helvetica;
             width:90%;
-            margin-top:300px;
+            margin-top:40%;
             margin-left:7%;
             position:absolute;
+	    text-align:center;
+	    overflow:hidden;
         }
         .square{
             width: 20%;
@@ -39,12 +44,16 @@
     </style>
 </head>
 <body id='body'>
-    <div id='trs' class='top right square'onclick="change_phrase();"></div>
-    <div id='tls' class='top left square'onclick="change_phrase();"></div>
-    <div id='bls' class='bottom left square'onclick="change_phrase();"></div>
-    <div id='brs' class='bottom right square' onclick="change_phrase();"></div>
+    <div id='trs' class='top right square'onclick="change_phrase();
+set_bg_color('body', random_hex()); new Effect.Shake('trs');"></div>
+    <div id='tls' class='top left square'onclick="change_phrase();
+set_bg_color('body', random_hex());"></div>
+    <div id='bls' class='bottom left square'onclick="change_phrase();
+set_bg_color('body', random_hex());"></div>
+    <div id='brs' class='bottom right square' onclick="change_phrase();
+set_bg_color('body', random_hex());"></div>
     <div id='center'>
-        Testicle Sasquatch.
+       YYYXXXYZZYY
     </div>
 </body>
 </html>

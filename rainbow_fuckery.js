@@ -35,8 +35,8 @@ function random_hex(){
 }
 
 function change_phrase() {
-    var phrases = new Array("Testicle Sasquatch", "Crump Dance Patty", "Fort Antioch, Texas",
-    "Our Lady, Antiquity", "Sundays with Mavis", "An Amazing Artifact");
+    var phrases = new Array("Artichoke Fortitude", "Crump Dance Patty", "Fort Antioch, Texas",
+    "Our Lady, Antiquity", "Sundays with Mavis", "An Amazing Artifact", "Burning Man, Man", "A Tudor Assignment");
     var num = Math.floor(Math.random()*phrases.length);
     while(document.getElementById('center').innerHTML == phrases[num]) {
         var num = Math.floor(Math.random()*phrases.length);
@@ -45,10 +45,10 @@ function change_phrase() {
 }
 
 for(var i=0; i<10000; i++) {
-    var a = Math.floor(Math.random()*25);
+    var a = Math.floor(Math.random()*5);
     var t = setTimeout("set_bg_color('trs', random_hex());", 100)
     var t = setTimeout("set_bg_color('tls', random_hex());", 100)
     var t = setTimeout("set_bg_color('brs', random_hex());", 100)
     var t = setTimeout("set_bg_color('bls', random_hex());", 100)
-    if(a>20) {var t = setTimeout("set_bg_color('body', random_hex());", 100)}
+    if(a==0) {var t = setTimeout("set_bg_color('body', random_hex());", 100)}
 }
