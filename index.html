@@ -10,14 +10,6 @@
             -webkit-transition: background .5s linear;
             transition: background .25s linear;
         }
-        #nebula {
-            width:99%;
-            height:99%;
-            position:absolute;
-            background:url('nebula.jpg');
-            opacity:.5;
-            z-index:-5;
-        }
         #center{
             font-size:750%;
             font-family:"Helvetica Neue", Helvetica, Sans;
@@ -26,6 +18,7 @@
             margin-left:5%;
             position:absolute;
 	        text-align:center;
+            text-shadow:#333 -5px -5px 10px;
 	        overflow:hidden;
         }
         .layer{
@@ -38,7 +31,7 @@
             border:solid black 4px;
             position:absolute;
         }
-        .square:hover, .layer:hover{
+        .layer:hover{
             cursor:url('pointer.png');
         }
         .top{
@@ -73,7 +66,7 @@
         <img class='pointer' id='brs_img' src='pointer.png' />
     </div>
     <div id='center'>
-       XXXYYYXXZZYYZYY 
+       XXYYYXZYYZYY 
     </div>
     <div class='top left layer' onclick="change_phrase();" onmouseover="hide_pointers();">
     </div>

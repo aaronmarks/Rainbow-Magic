@@ -6,30 +6,11 @@ function set_bg_color(id, hex) {
 
 function random_hex(){
     var hex = "";
+    var letters = new Array("A", "B", "C", "D", "E", "F");
     for(var i=0; i<6; i++){
-        var num = Math.floor(Math.random()*16)
-        switch(num){
-            case 0:
-                hex = hex + "A";
-                break;
-            case 1:
-                hex = hex + "B";
-                break;
-            case 2:
-                hex = hex + "C";
-                break;
-            case 3:
-                hex = hex + "D";
-                break;
-            case 4:
-                hex = hex + "E";
-                break;
-            case 5:
-                hex = hex + "F";
-                break;
-            default:
-                hex = hex + (num - 6);
-        }
+        var num = Math.floor(Math.random()*16);
+        if (num < 6) { hex = hex + letters[num]; }
+        else { hex = hex + (num - 6); }
     }
     return hex;
 }
@@ -38,27 +19,28 @@ function change_phrase() {
     var phrases = new Array(
     "&Delta;&Delta;&Delta;&Delta;&Delta;&Delta;&Delta;&Delta;&Delta;&Delta;&Delta;",
     "Amazing Artifact", 
-    "Artichoke Harbinger", 
+    "Artichoke Flats", 
     "Burning Man, Man", 
     "Crump Dance Party", 
-    "Dagger Ethiopian",
+    "Daggers Ethiopian",
     "Dirty Milkshake",
-    "Fortified Desserts",
-    "Obadiah Tulip",
+    "Earl of Ice Cream",
+    "Future Desserts",
+    "Monkey Soup",
+    "Neutrino Tuesday",
     "Our Lady Antiquity", 
     "Petunia Davis",
-    "Sandal Assault",
     "Sundays with Mavis", 
-    "Testicle Sasquatch",
+    "The Grumble Boys",
     "Tofu Explosion",
     "Tudor Assignment",
     "Yurt Humungous"
     );
     var num = Math.floor(Math.random()*phrases.length);
-    while(document.getElementById('center').innerHTML == phrases[num]) {
+    while($('center').innerHTML == phrases[num]) {
         var num = Math.floor(Math.random()*phrases.length);
     }
-    document.getElementById('center').innerHTML = phrases[num];
+    $('center').innerHTML = phrases[num];
 }
 
 function hide_pointers() {
@@ -66,6 +48,10 @@ function hide_pointers() {
     for (var i=0; i< ids.length; i++) {
         $(ids[i] + '_img').hide();
     }
+}
+
+function rotate_text_shadow(id){
+    var sheet = document.createElement('style');
 }
 
 for(var i=0; i<10000; i++) {
