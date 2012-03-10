@@ -50,7 +50,9 @@ function change_phrase() {
     "Sandal Assault",
     "Sundays with Mavis", 
     "Testicle Sasquatch",
-    "Tudor Assignment"
+    "Tofu Explosion",
+    "Tudor Assignment",
+    "Yurt Humungous"
     );
     var num = Math.floor(Math.random()*phrases.length);
     while(document.getElementById('center').innerHTML == phrases[num]) {
@@ -59,15 +61,11 @@ function change_phrase() {
     document.getElementById('center').innerHTML = phrases[num];
 }
 
-function hide_pointer(id) {
-    $(id + '_img').hide();
-}
-
 function hide_pointers() {
-    $('trs_img').fade();
-    $('brs_img').fade();
-    $('bls_img').fade();
-    $('tls_img').fade();
+    var ids = new Array("trs", "tls", "brs", "bls");
+    for (var i=0; i< ids.length; i++) {
+        $(ids[i] + '_img').hide();
+    }
 }
 
 for(var i=0; i<10000; i++) {

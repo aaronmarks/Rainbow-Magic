@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>turtles?</title>
+    <script src="rainbow_fuckery.js"></script>
+    <script src="scriptaculous-js-1.9.0/lib/prototype.js"></script>
+    <script src="scriptaculous-js-1.9.0/src/scriptaculous.js"></script>
+    <script src="scriptaculous-js-1.9.0/src/effects.js"></script>
+    <style>
+        body{
+            -webkit-transition: background .5s linear;
+            transition: background .25s linear;
+        }
+        #nebula {
+            width:99%;
+            height:99%;
+            position:absolute;
+            background:url('nebula.jpg');
+            opacity:.5;
+            z-index:-5;
+        }
+        #center{
+            font-size:750%;
+            font-family:"Helvetica Neue", Helvetica, Sans;
+            width:90%;
+            margin-top:40%;
+            margin-left:5%;
+            position:absolute;
+	        text-align:center;
+	        overflow:hidden;
+        }
+        .layer{
+            z-index:99999;
+            background:url('jail.png');
+        }
+        .square, .layer{
+            width: 20%;
+            height: 30%;
+            border:solid black 4px;
+            position:absolute;
+        }
+        .square:hover, .layer:hover{
+            cursor:url('pointer.png');
+        }
+        .top{
+            margin-top:5%;
+        }
+        .bottom{
+            margin-top:62%;
+        }
+        .left{
+            margin-left:15%;
+        }
+        .right{
+            margin-left:60%;
+        }
+        .pointer{
+            margin-left:40%;
+            margin-top:30%;
+        }
+    </style>
+</head>
+<body id='body'>
+    <div id='trs' class='top right square'>
+        <img class='pointer' id='trs_img' src='pointer.png' />
+    </div>
+    <div id='tls' class='top left square';>
+        <img class='pointer' id='tls_img' src='pointer.png' />
+    </div>
+    <div id='bls' class='bottom left square'>
+        <img class='pointer'id='bls_img' src='pointer.png' />
+    </div>
+    <div id='brs' class='bottom right square'>
+        <img class='pointer' id='brs_img' src='pointer.png' />
+    </div>
+    <div id='center'>
+       XXXYYYXXZZYYZYY 
+    </div>
+    <div class='top left layer' onclick="change_phrase();" onmouseover="hide_pointers();">
+    </div>
+    <div class='top right layer' onclick="change_phrase();" onmouseover="hide_pointers();">
+    </div>
+    <div class='bottom left layer'onclick="change_phrase();" onmouseover="hide_pointers();">
+    </div>
+    <div class='bottom right layer'onclick="change_phrase();" onmouseover="hide_pointers();">
+    </div>
+</body>
+</html>
