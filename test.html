@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>flight of the valklulries</title>
+    <title>turtles?</title>
     <script src="rainbow_fuckery.js"></script>
     <script src="scriptaculous-js-1.9.0/lib/prototype.js"></script>
     <script src="scriptaculous-js-1.9.0/src/scriptaculous.js"></script>
@@ -12,22 +12,29 @@
         }
         #center{
             font-size:750%;
-            font-family:"Helvetica Neue", Helvetica;
+            font-family:"Helvetica Neue", Helvetica, Sans;
             width:90%;
             margin-top:40%;
-            margin-left:7%;
+            margin-left:5%;
             position:absolute;
-	    text-align:center;
-	    overflow:hidden;
+	        text-align:center;
+	        overflow:hidden;
+        }
+        .layer{
+            position:absolute;
+            z-index:99999;
+            width: 20%;
+            height: 30%;
+            background:url('jail.png');
         }
         .square{
             width: 20%;
             height: 30%;
-            border:solid black 8px;
+            border:solid black 4px;
             position:absolute;
         }
         .square:hover{
-            cursor:pointer;
+            cursor:url('pointer.png');
         }
         .top{
             margin-top:5%;
@@ -45,15 +52,35 @@
 </head>
 <body id='body'>
     <div id='trs' class='top right square'onclick="change_phrase();
-set_bg_color('body', random_hex()); new Effect.Shake('trs');"></div>
+    set_bg_color('body', random_hex()); hide_pointers();"
+    onmouseover = "hide_pointer('trs');">
+        <img id='trs_img' style='margin-left:40%;margin-top:30%' src='pointer.png' />
+    </div>
     <div id='tls' class='top left square'onclick="change_phrase();
-set_bg_color('body', random_hex());"></div>
+    set_bg_color('body', random_hex()); hide_pointers();"
+    onmouseover = "hide_pointer('tls');">
+        <img id='tls_img' style='margin-left:40%;margin-top:30%' src='pointer.png' />
+    </div>
     <div id='bls' class='bottom left square'onclick="change_phrase();
-set_bg_color('body', random_hex());"></div>
+    set_bg_color('body', random_hex()); hide_pointers;"
+    onmouseover = "hide_pointer('bls');">
+        <img id='bls_img' style='margin-left:40%;margin-top:30%' src='pointer.png' />
+    </div>
     <div id='brs' class='bottom right square' onclick="change_phrase();
-set_bg_color('body', random_hex());"></div>
+    set_bg_color('body', random_hex()); hide_pointers;"
+    onmouseover = "hide_pointer('brs');">
+        <img id='brs_img' style='margin-left:40%;margin-top:30%' src='pointer.png' />
+    </div>
     <div id='center'>
-       YYYXXXYZZYY
+        Testicle Sasquatch
+    </div>
+    <div class='top left layer'>
+    </div>
+    <div class='top right layer'>
+    </div>
+    <div class='bottom left layer'>
+    </div>
+    <div class='bottom right layer'>
     </div>
 </body>
 </html>

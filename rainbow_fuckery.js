@@ -35,13 +35,39 @@ function random_hex(){
 }
 
 function change_phrase() {
-    var phrases = new Array("Artichoke Fortitude", "Crump Dance Patty", "Fort Antioch, Texas",
-    "Our Lady, Antiquity", "Sundays with Mavis", "An Amazing Artifact", "Burning Man, Man", "A Tudor Assignment");
+    var phrases = new Array(
+    "&Delta;&Delta;&Delta;&Delta;&Delta;&Delta;&Delta;&Delta;&Delta;&Delta;&Delta;",
+    "Amazing Artifact", 
+    "Artichoke Harbinger", 
+    "Burning Man, Man", 
+    "Crump Dance Party", 
+    "Dagger Ethiopian",
+    "Dirty Milkshake",
+    "Fortified Desserts",
+    "Obadiah Tulip",
+    "Our Lady Antiquity", 
+    "Petunia Davis",
+    "Sandal Assault",
+    "Sundays with Mavis", 
+    "Testicle Sasquatch",
+    "Tudor Assignment"
+    );
     var num = Math.floor(Math.random()*phrases.length);
     while(document.getElementById('center').innerHTML == phrases[num]) {
         var num = Math.floor(Math.random()*phrases.length);
     }
     document.getElementById('center').innerHTML = phrases[num];
+}
+
+function hide_pointer(id) {
+    $(id + '_img').hide();
+}
+
+function hide_pointers() {
+    $('trs_img').fade();
+    $('brs_img').fade();
+    $('bls_img').fade();
+    $('tls_img').fade();
 }
 
 for(var i=0; i<10000; i++) {
