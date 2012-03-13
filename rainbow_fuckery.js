@@ -34,7 +34,7 @@ function change_phrase() {
     "The Grumble Boys",
     "Tofu Explosion",
     "Tudor Assignment",
-    "Yurt Humungous"
+    "Yurt Hummus"
     );
     var num = Math.floor(Math.random()*phrases.length);
     while($('center').innerHTML == phrases[num]) {
