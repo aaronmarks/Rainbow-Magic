@@ -19,6 +19,7 @@ function change_phrase() {
     var phrases = new Array(
     "&Delta;&Delta;&Delta;&Delta;&Delta;&Delta;&Delta;&Delta;&Delta;&Delta;&Delta;",
     "Amazing Artifact", 
+    "Apocryphal Sex",
     "Artichoke Flats", 
     "Burning Man, Man", 
     "Crump Dance Party", 
@@ -26,15 +27,20 @@ function change_phrase() {
     "Dirty Milkshake",
     "Earl of Ice Cream",
     "Future Desserts",
+    "Jello Twostep",
+    "Kool Aid Bread Box",
     "Monkey Soup",
     "Neutrino Tuesday",
     "Our Lady Antiquity", 
     "Petunia Davis",
+    "Purple Orange",
     "Sundays with Mavis", 
+    "Testicle Sasquatch",
     "The Grumble Boys",
     "Tofu Explosion",
     "Tudor Assignment",
-    "Yurt Hummus"
+    "Yurt Hummus",
+    "Zebra Chips"
     );
     var num = Math.floor(Math.random()*phrases.length);
     while($('center').innerHTML == phrases[num]) {
@@ -48,10 +54,6 @@ function hide_pointers() {
     for (var i=0; i< ids.length; i++) {
         $(ids[i] + '_img').hide();
     }
-}
-
-function rotate_text_shadow(id){
-    var sheet = document.createElement('style');
 }
 
 for(var i=0; i<10000; i++) {
