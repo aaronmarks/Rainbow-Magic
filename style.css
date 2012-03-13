@@ -1,0 +1,46 @@
+body{
+    -webkit-transition: background .5s linear;
+    transition: background .25s linear;
+}
+#center{
+    font-size:750%;
+    font-family: "Hoefler Text", "Helvetica Neue", Helvetica, Sans;
+    width:90%;
+    margin-top:43%;
+    margin-left:5%;
+    position:absolute;
+    text-align:center;
+    text-shadow:#333 -3px -3px 10px;
+    overflow:hidden;
+}
+.layer{
+    z-index:99999;
+    background:url('jail.png');
+}
+.square, .layer{
+    width: 20%;
+    height: 30%;
+    border:solid black 4px;
+    position:absolute;
+}
+.layer:hover{
+    cursor:url('images/pointer.png');
+}
+.top{
+    margin-top:5%;
+}
+.bottom{
+    margin-top:62%;
+}
+.left{
+    margin-left:15%;
+}
+.right{
+    margin-left:60%;
+}
+.pointer{
+    margin-left:40%;
+    margin-top:30%;
+}
+::selection      { background:#FFFF00; color:#000; /* Safari and Opera */ }
+::-moz-selection  { background:#FFFF00; color:#000; /* Firefox */ }
