@@ -15,7 +15,7 @@ body{
 }
 .layer{
     z-index:99999;
-    background:url('jail.png');
+    background:url('images/jail.png');
 }
 .square, .layer{
     width: 20%;
@@ -42,5 +42,3 @@ body{
     margin-left:40%;
     margin-top:30%;
 }
-::selection      { background:#FFFF00; color:#000; /* Safari and Opera */ }
-::-moz-selection  { background:#FFFF00; color:#000; /* Firefox */ }
