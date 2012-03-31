@@ -1,8 +1,10 @@
 body{
     -webkit-transition: background .5s linear;
     transition: background .25s linear;
+    background:url('images/nebula.jpg');
 }
 #center{
+    color:white;
     font-size:750%;
     font-family: "Hoefler Text", "Helvetica Neue", Helvetica, Sans;
     width:90%;
@@ -12,6 +14,7 @@ body{
     text-align:center;
     text-shadow:#333 -3px -3px 10px;
     overflow:hidden;
+    text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
 }
 .layer{
     z-index:99999;

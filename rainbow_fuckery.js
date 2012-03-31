@@ -21,6 +21,7 @@ function change_phrase() {
     "Amazing Artifact", 
     "Apocryphal Sex",
     "Artichoke Flats", 
+    "Bernie the Grump",
     "Burning Man, Man", 
     "Crump Dance Party", 
     "Daggers Ethiopian",
@@ -35,7 +36,6 @@ function change_phrase() {
     "Petunia Davis",
     "Purple Orange",
     "Sundays with Mavis", 
-    "Testicle Sasquatch",
     "The Grumble Boys",
     "Tofu Explosion",
     "Tudor Assignment",
@@ -58,9 +58,9 @@ function hide_pointers() {
 
 for(var i=0; i<10000; i++) {
     var a = Math.floor(Math.random()*5);
-    var t = setTimeout("set_bg_color('trs', random_hex());", 100)
-    var t = setTimeout("set_bg_color('tls', random_hex());", 100)
-    var t = setTimeout("set_bg_color('brs', random_hex());", 100)
-    var t = setTimeout("set_bg_color('bls', random_hex());", 100)
-    if(a==0) {var t = setTimeout("set_bg_color('body', random_hex());", 100)}
+    var t = setTimeout("set_bg_color('trs', random_hex());", 1)
+    var t = setTimeout("set_bg_color('tls', random_hex());", 1)
+    var t = setTimeout("set_bg_color('brs', random_hex());", 1)
+    var t = setTimeout("set_bg_color('bls', random_hex());", 1)
+    //if(a==0) {var t = setTimeout("set_bg_color('body', random_hex());", 1)}
 }

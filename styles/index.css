@@ -1,6 +1,7 @@
 body{
     -webkit-transition: background .5s linear;
     transition: background .25s linear;
+    background:blue !important;
 }
 #center{
     font-size:750%;
